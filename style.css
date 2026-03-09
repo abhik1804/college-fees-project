@@ -1,0 +1,176 @@
+/* ===== GLOBAL ===== */
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#f1f5f9;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+    width:230px;
+    height:100vh;
+    background:#0f172a;
+    position:fixed;
+    padding-top:20px;
+}
+
+.sidebar h3{
+    color:#fff;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.sidebar a{
+    display:block;
+    color:#cbd5e1;
+    padding:12px 20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+/* ===== CONTENT ===== */
+.content{
+    margin-left:230px;
+    padding:30px;
+}
+
+/* ===== CARD ===== */
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+}
+
+/* ===== STAT CARDS ===== */
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.stat-card{
+    flex:1;
+    min-width:250px;
+    padding:20px;
+    border-radius:15px;
+    color:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.blue{ background:#2563eb; }
+.green{ background:#16a34a; }
+.orange{ background:#f59e0b; }
+
+/* ===== FORM INPUTS ===== */
+input, select{
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+/* ===== BUTTONS ===== */
+.btn{
+    padding:8px 15px;
+    border-radius:6px;
+    color:white;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+}
+
+.btn-primary{ background:#2563eb; }
+.btn-success{ background:#16a34a; }
+.btn-danger{ background:#dc2626; }
+
+.btn-primary:hover{ background:#1d4ed8; }
+.btn-success:hover{ background:#15803d; }
+.btn-danger:hover{ background:#b91c1c; }
+
+/* ===== TABLE ===== */
+.table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.table th{
+    background:#2563eb;
+    color:white;
+    padding:12px;
+}
+
+.table td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+.table tr:hover{
+    background:#f1f5f9;
+}
+
+/* ===== DARK MODE ===== */
+body.dark{
+    background:#0f172a;
+    color:white;
+}
+
+body.dark .content{
+    background:#0f172a;
+    color:white;
+}
+
+body.dark .sidebar{
+    background:#020617;
+}
+
+body.dark .card{
+    background:#1e293b;
+    color:white;
+}
+
+body.dark .table{
+    background:#1e293b;
+    color:white;
+}
+
+body.dark .table th{
+    background:#334155;
+}
+
+body.dark input,
+body.dark select{
+    background:#334155;
+    color:white;
+    border:1px solid #555;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+
+    .content{
+        margin-left:0;
+    }
+
+    .card-container{
+        flex-direction:column;
+    }
+}
